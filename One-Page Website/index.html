@@ -16,111 +16,90 @@
             <ul>
                 <a href="#cat"><li>Cats & Kittens</li></a>
                 <a href="#dog"><li>Dogs & Puppies</li></a>
-                <a href="#rabbit"><li>Rabbits</li></a>
+                <a href="#rabbit"><li>Rabbit</li></a>
                 <a href="#guineapig"><li>Guinea Pigs</li></a>
                 <a href="#fish"><li>Fish</li></a>
                 <a href="#reptile"><li>Reptiles</li></a>
                 <a href="#video"><li>Videos</li></a>
             </ul>
         </div>
+        
         <!--HEADER-->
         <header>
             <div>
                 <h1 class="animateText">Welcome to The Pet Shop!</h1>
             </div>
         </header>
+
         <!--PET IMAGES-->
-        <section>
+        <section id="gallery">
             <div class="container">
-                <h2>Choose a Pet!</h2> <!--Add in script to change from Pick a Pet! to Choose a Pet!-->
-                <div>
-                    <!--CAT IMAGE-->
-                    <div id="cat" class="column">
-                       <div class="image-container"><!--NEW this applies for all images down.-->
-                            <h3>Cats & Kittens</h3>
-                            <img src="images/cat.png" alt="Picture of kittens" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select which cat or kitten you want to take home.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--DOG IMAGE-->
-                    <div id="dog" class="column">
-                        <div class="image-container">
-                        <h3>Dogs & Puppies</h3>
-                        <img src="images/dog.png" alt="Picture of dogs" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select which dog or puppy you want to take home.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--RABBIT IMAGE-->
-                    <div id="rabbit" class="column">
-                        <div class="image-container">
-                            <h3>Rabbits</h3>
-                            <img src="images/rabbits.png" alt="Picture of rabbits" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select which rabbit you want to take home.</div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--GUINEA PIG IMAGE-->
-                     <div id="guineapig" class="column">
-                        <div class="image-container">
-                            <h3>Guinea Pigs</h3>
-                            <img src="images/guineapigs.png" alt="Picture of guinea pigs" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select your perfect guinea pig to take home.</div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--FISH IMAGE-->
-                     <div id="fish" class="column">
-                        <div class="image-container">
-                            <h3>Fish</h3>
-                            <img src="images/fish.png" alt="Picture of goldfish" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select which fish you want to take home.</div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--REPTILE IMAGE-->
-                     <div id="reptile" class="column">
-                        <div class="image-container">
-                            <h3>Reptiles</h3>
-                            <img src="images/beardedDragon.png" alt="Picture of a bearded dragon" class="image">
-                            <div class="overlay"> <!--ADD NEW DIVS FOR OVERLAY-->
-                                <div class="text">Select which reptile you want to take home.</div>
-                            </div>
-                        </div>
+                <!-- Cats Section -->
+                <div id="cat" class="image-container">
+                    <h1>Cats & Kittens</h1>
+                    <img src="cat.png" alt="Picture of a cat" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                </div>
+
+                <!-- Dogs Section -->
+                <div id="dog" class="image-container">
+                    <h1>Dogs & Puppies</h1>
+                    <img src="dog.png" alt="Picture of a dog" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                </div>
+
+                <!-- Rabbits Section -->
+                <div id="rabbit" class="image-container">
+                    <h1>Rabbits</h1>
+                    <img src="images/rabbit.png" alt="Picture of a rabbit" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                </div>
+
+                <!-- Guinea Pigs Section -->
+                <div id="guineapig" class="image-container">
+                    <h1>Guinea Pigs</h1>
+                    <img src="guineapigs.png" alt="Picture of a guinea pig" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                </div>
+
+                <!-- Fish Section -->
+                <div id="fish" class="image-container">
+                    <h1>Fish</h1>
+                    <img src="fish.png" alt="Picture of a fish" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                </div>
+
+                <!-- Reptiles Section -->
+                <div id="reptile" class="image-container">
+                    <h1>Reptiles</h1>
+                    <img src="images/beardedDragon.png" alt="Picture of a bearded dragon" class="image" onclick="const m = document.getElementById('lightboxModal'); m.style.display='flex'; document.getElementById('lightboxImg').src=this.src;">
+                    <div class="overlay">
+                        <div class="text">Select which reptile you want to take home.</div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--VIDEOS-->
         <section>
-            <!--DOG VIDEO-->
             <div id="video" class="container">
-                <h2>Videos</h2> <!--Add in script to change from h3 to h2-->
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
+                <h2>Videos</h2>
+                <iframe width="1280" height="720" src="https://youtube.com"></iframe>
             </div>
         </section>
+
         <!--FOOTER-->
         <footer>
             <table>
                 <tr>
-                    <td>
-                        <p>The Pet Shop! &copy;</p>
-                    </td>
-                    <td>
-                        <p>123 Square Ave</p>
-                        <p>Portland, OR 97204</p>
-                    </td>
-                    <td>
-                        <p>503-234-3966</p>
-                    </td>
+                    <td><p>The Pet Shop! &copy;</p></td>
+                    <td><p>123 Square Ave</p><p>Portland, OR 97204</p></td>
+                    <td><p>503-234-3966</p></td>
                 </tr>
             </table>
         </footer>
+
+        <!-- Lightbox Modal Overlay -->
+        <div id="lightboxModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+          <span style="position:absolute; top:20px; right:35px; color:white; font-size:40px; cursor:pointer; font-family:sans-serif;" onclick="document.getElementById('lightboxModal').style.display='none'">&times;</span>
+          <img id="lightboxImg" style="max-width:80%; max-height:80%; border: 3px solid white; border-radius: 5px;">
+        </div>
+
     </body>
 </html>
+                     
