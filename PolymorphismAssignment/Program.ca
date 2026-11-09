@@ -1,0 +1,41 @@
+[6:51 PM, 11/9/2026] M: using System;
+
+namespace PolymorphismAssignment
+{
+    // Define an interface named IQuittable
+    public interface IQuittable
+    {
+        // Declare a void method named Quit() that implementing classes must define
+        void Quit();
+    }
+}
+[6:54 PM, 11/9/2026] M: using System;
+
+namespace PolymorphismAssignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Instantiate a new Employee object and assign values to its properties
+            Employee employee = new Employee()
+            {
+                FirstName = "Sample",
+                LastName = "Student"
+            };
+
+            // Call the SayName() method on the Employee object
+            employee.SayName();
+
+            // Use polymorphism to create an object of type IQuittable
+            // This works because the Employee class implements the IQuittable interface
+            IQuittable quittableEmployee = employee;
+
+            // Call the Quit() method on the IQuittable interface object
+            quittableEmployee.Quit();
+
+            // Keep the console window open until the user presses Enter
+            Console.ReadLine();
+        }
+    }
+}
